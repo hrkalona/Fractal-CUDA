@@ -6,11 +6,11 @@ The application uses openGL for drawing.
 Compile:
 
 for doubles
-nvcc -O3 optimized_fractal_zoomer.cu introGlutLib.cu -o fractal_zoomer -arch=sm_20 -lglut -lGL -lGLU
-
+nvcc -O4 optimized_fractal_zoomer.cu introGlutLib.cu -o fractal_zoomer -lglut -lGL -lGLU
+ -arch=sm_20
 
 for floats
-nvcc -O3 optimized_fractal_zoomer_with_floats.cu introGlutLib.cu -o fractal_zoomer -lglut -lGL -lGLU
+nvcc -O4 optimized_fractal_zoomer_with_floats.cu introGlutLib.cu -o fractal_zoomer -lglut -lGL -lGLU
 
 
 Functions:
